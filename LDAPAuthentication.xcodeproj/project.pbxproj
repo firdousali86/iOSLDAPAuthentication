@@ -390,7 +390,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tenpearls.app.LDAPAuthentication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/LDAPAuthentication/ExternalLibraries/iOSPorts/examples/database/openldap/ldapsearch $(PROJECT_DIR)/LDAPAuthentication/ExternalLibraries/iOSPorts/ports/database/openldap";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/LDAPAuthentication/ExternalLibraries/iOSPorts/ports/database/openldap";
 			};
 			name = Debug;
 		};
@@ -409,7 +409,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tenpearls.app.LDAPAuthentication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/LDAPAuthentication/ExternalLibraries/iOSPorts/examples/database/openldap/ldapsearch $(PROJECT_DIR)/LDAPAuthentication/ExternalLibraries/iOSPorts/ports/database/openldap";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/LDAPAuthentication/ExternalLibraries/iOSPorts/ports/database/openldap";
 			};
 			name = Release;
 		};

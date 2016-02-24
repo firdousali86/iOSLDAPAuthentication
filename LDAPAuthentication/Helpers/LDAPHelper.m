@@ -24,7 +24,7 @@
 #define PORTNUMBER 389
 #define BASEDN "dc=ten-pearl,dc=com"
 #define BIND_DN "uid=firdous,ou=staff,dc=ten-pearl,dc=com"
-#define BIND_PW "tenpearls"
+#define BIND_PW "tenpefarls"
 #define SCOPE LDAP_SCOPE_SUBTREE
 #define FILTER "(sn=firdous)"
 
