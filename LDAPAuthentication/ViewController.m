@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "ldapTest2.h"
+#import "LDAPHelper.h"
 
 @interface ViewController ()
 
