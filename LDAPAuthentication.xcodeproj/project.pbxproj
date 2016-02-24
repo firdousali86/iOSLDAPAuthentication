@@ -22,13 +22,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8DD8A5501C7D7ECF00AE0758 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8DD8A5491C7D7ECE00AE0758 /* ldapsearch.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
-			remoteInfo = ldapsearch;
-		};
 		8DD8A5581C7D7FD100AE0758 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8DD8A5521C7D7FD100AE0758 /* openldap.xcodeproj */;
@@ -70,7 +63,6 @@
 		8D77BB931C7D7A2700FCD58F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D77BB961C7D7A2700FCD58F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D77BB981C7D7A2700FCD58F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8DD8A5491C7D7ECE00AE0758 /* ldapsearch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ldapsearch.xcodeproj; path = ExternalLibraries/iOSPorts/examples/database/openldap/ldapsearch/ldapsearch.xcodeproj; sourceTree = "<group>"; };
 		8DD8A5521C7D7FD100AE0758 /* openldap.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openldap.xcodeproj; path = ExternalLibraries/iOSPorts/ports/database/openldap/openldap.xcodeproj; sourceTree = "<group>"; };
 		8DD8A57C1C7D858F00AE0758 /* LDAPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDAPHelper.h; sourceTree = "<group>"; };
 		8DD8A57D1C7D858F00AE0758 /* LDAPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDAPHelper.m; sourceTree = "<group>"; };
@@ -144,17 +136,8 @@
 			isa = PBXGroup;
 			children = (
 				8DD8A5521C7D7FD100AE0758 /* openldap.xcodeproj */,
-				8DD8A5491C7D7ECE00AE0758 /* ldapsearch.xcodeproj */,
 			);
 			name = ExternalLibraries;
-			sourceTree = "<group>";
-		};
-		8DD8A54A1C7D7ECE00AE0758 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8DD8A5511C7D7ECF00AE0758 /* ldapsearch.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		8DD8A5531C7D7FD100AE0758 /* Products */ = {
@@ -224,10 +207,6 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 8DD8A54A1C7D7ECE00AE0758 /* Products */;
-					ProjectRef = 8DD8A5491C7D7ECE00AE0758 /* ldapsearch.xcodeproj */;
-				},
-				{
 					ProductGroup = 8DD8A5531C7D7FD100AE0758 /* Products */;
 					ProjectRef = 8DD8A5521C7D7FD100AE0758 /* openldap.xcodeproj */;
 				},
@@ -240,13 +219,6 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		8DD8A5511C7D7ECF00AE0758 /* ldapsearch.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = ldapsearch.app;
-			remoteRef = 8DD8A5501C7D7ECF00AE0758 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		8DD8A5591C7D7FD100AE0758 /* libldap.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
