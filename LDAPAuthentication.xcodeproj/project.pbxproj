@@ -13,6 +13,12 @@
 		8D77BB921C7D7A2700FCD58F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D77BB901C7D7A2700FCD58F /* Main.storyboard */; };
 		8D77BB941C7D7A2700FCD58F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D77BB931C7D7A2700FCD58F /* Assets.xcassets */; };
 		8D77BB971C7D7A2700FCD58F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D77BB951C7D7A2700FCD58F /* LaunchScreen.storyboard */; };
+		8DD8A57E1C7D858F00AE0758 /* ldapTest2.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD8A57D1C7D858F00AE0758 /* ldapTest2.m */; };
+		8DD8A5811C7D85C700AE0758 /* liblber.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DD8A55B1C7D7FD100AE0758 /* liblber.a */; };
+		8DD8A5821C7D85C700AE0758 /* libldap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DD8A5591C7D7FD100AE0758 /* libldap.a */; };
+		8DD8A5861C7D85C800AE0758 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DD8A5831C7D85C700AE0758 /* libcrypto.a */; };
+		8DD8A5871C7D85C800AE0758 /* libsasl2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DD8A5841C7D85C800AE0758 /* libsasl2.a */; };
+		8DD8A5881C7D85C800AE0758 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DD8A5851C7D85C800AE0758 /* libssl.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +72,11 @@
 		8D77BB981C7D7A2700FCD58F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DD8A5491C7D7ECE00AE0758 /* ldapsearch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ldapsearch.xcodeproj; path = ExternalLibraries/iOSPorts/examples/database/openldap/ldapsearch/ldapsearch.xcodeproj; sourceTree = "<group>"; };
 		8DD8A5521C7D7FD100AE0758 /* openldap.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openldap.xcodeproj; path = ExternalLibraries/iOSPorts/ports/database/openldap/openldap.xcodeproj; sourceTree = "<group>"; };
+		8DD8A57C1C7D858F00AE0758 /* ldapTest2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ldapTest2.h; sourceTree = "<group>"; };
+		8DD8A57D1C7D858F00AE0758 /* ldapTest2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ldapTest2.m; sourceTree = "<group>"; };
+		8DD8A5831C7D85C700AE0758 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "LDAPAuthentication/ExternalLibraries/iOSPorts/ports/security/openssl/build/Debug-iphoneos/libcrypto.a"; sourceTree = "<group>"; };
+		8DD8A5841C7D85C800AE0758 /* libsasl2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsasl2.a; path = "LDAPAuthentication/ExternalLibraries/iOSPorts/ports/security/cyrus-sasl/build/Debug-iphoneos/libsasl2.a"; sourceTree = "<group>"; };
+		8DD8A5851C7D85C800AE0758 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "LDAPAuthentication/ExternalLibraries/iOSPorts/ports/security/openssl/build/Debug-iphoneos/libssl.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +84,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DD8A5861C7D85C800AE0758 /* libcrypto.a in Frameworks */,
+				8DD8A5871C7D85C800AE0758 /* libsasl2.a in Frameworks */,
+				8DD8A5881C7D85C800AE0758 /* libssl.a in Frameworks */,
+				8DD8A5811C7D85C700AE0758 /* liblber.a in Frameworks */,
+				8DD8A5821C7D85C700AE0758 /* libldap.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +98,9 @@
 		8D77BB7B1C7D7A2700FCD58F = {
 			isa = PBXGroup;
 			children = (
+				8DD8A5831C7D85C700AE0758 /* libcrypto.a */,
+				8DD8A5841C7D85C800AE0758 /* libsasl2.a */,
+				8DD8A5851C7D85C800AE0758 /* libssl.a */,
 				8D77BB861C7D7A2700FCD58F /* LDAPAuthentication */,
 				8D77BB851C7D7A2700FCD58F /* Products */,
 			);
@@ -98,6 +117,7 @@
 		8D77BB861C7D7A2700FCD58F /* LDAPAuthentication */ = {
 			isa = PBXGroup;
 			children = (
+				8DD8A57B1C7D858F00AE0758 /* Helpers */,
 				8DD8A5481C7D7EAF00AE0758 /* ExternalLibraries */,
 				8D77BB8A1C7D7A2700FCD58F /* AppDelegate.h */,
 				8D77BB8B1C7D7A2700FCD58F /* AppDelegate.m */,
@@ -144,6 +164,15 @@
 				8DD8A55B1C7D7FD100AE0758 /* liblber.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		8DD8A57B1C7D858F00AE0758 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8DD8A57C1C7D858F00AE0758 /* ldapTest2.h */,
+				8DD8A57D1C7D858F00AE0758 /* ldapTest2.m */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D77BB8F1C7D7A2700FCD58F /* ViewController.m in Sources */,
+				8DD8A57E1C7D858F00AE0758 /* ldapTest2.m in Sources */,
 				8D77BB8C1C7D7A2700FCD58F /* AppDelegate.m in Sources */,
 				8D77BB891C7D7A2700FCD58F /* main.m in Sources */,
 			);
@@ -378,12 +408,17 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/LDAPAuthentication/ExternalLibraries/iOSPorts/include";
 				INFOPLIST_FILE = LDAPAuthentication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LDAPAuthentication/ExternalLibraries/iOSPorts/ports/security/openssl/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/LDAPAuthentication/ExternalLibraries/iOSPorts/ports/security/cyrus-sasl/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tenpearls.app.LDAPAuthentication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "ExternalLibraries/iOSPorts/examples/database/openldap/ldapsearch ExternalLibraries/iOSPorts/ports/database/openldap";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/LDAPAuthentication/ExternalLibraries/iOSPorts/examples/database/openldap/ldapsearch $(PROJECT_DIR)/LDAPAuthentication/ExternalLibraries/iOSPorts/ports/database/openldap";
 			};
 			name = Debug;
 		};
@@ -392,12 +427,17 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/LDAPAuthentication/ExternalLibraries/iOSPorts/include";
 				INFOPLIST_FILE = LDAPAuthentication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LDAPAuthentication/ExternalLibraries/iOSPorts/ports/security/openssl/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/LDAPAuthentication/ExternalLibraries/iOSPorts/ports/security/cyrus-sasl/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tenpearls.app.LDAPAuthentication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "ExternalLibraries/iOSPorts/examples/database/openldap/ldapsearch ExternalLibraries/iOSPorts/ports/database/openldap";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/LDAPAuthentication/ExternalLibraries/iOSPorts/examples/database/openldap/ldapsearch $(PROJECT_DIR)/LDAPAuthentication/ExternalLibraries/iOSPorts/ports/database/openldap";
 			};
 			name = Release;
 		};
